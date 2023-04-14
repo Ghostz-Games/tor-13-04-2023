@@ -1,0 +1,24 @@
+Hvad gør metoden "Instanceof"?
+Instanceof tjekker om den givet klasse er en bestemt klasse.
+Eksempel:
+Lad os sige, at jeg har en overklasse kaldet FORMER og under den klasse har jeg to klasser der arver fra den:
+FIRKANT og CIRKEL. Begge former hører under klassen FORMER, og derfor kan de kaldes på under den klasse. Hvis nu jeg
+har et array af FORMER, og jeg gerne ville vide om den form jeg har på et bestemt index er en firkant, kan jeg sige:
+if(arr[i] instanceof FIRKANT){
+    System.out.println("Dette er en firkant");
+}
+
+Hvad vil de sige, at en metode er abstrakt?
+En abstrakt metode er en metode uden en krop, og klasser der implementerer klassen med metoden SKAL implementere den
+abstrakte metode. Medmindre klassen selv er abstrakt.
+
+Kan man have en ikke-abstrakt klasse med en abstrakt metode? Hvis ikke, hvorfor?
+Det kan man ikke, fordi en ikke-abstrakt klasse skal implementere alle dens metoder, og en abstrakt metode bliver ikke
+implementeret.
+
+Hvad betyder @Override?
+@Override er sådan man overskriver en metode der allerede eksisterer hos klassen.
+Eksempel:
+Alle klasser arver en ToString metode, som skriver addressen på objektet i din hukommelse. Hvis du @Overrider denne
+ToString metode, har man mulighed for, at sige, at den skal skrive noget andet ud, når denne klasses toString metode
+bliver kaldt. PÅ denne måde, er den originale ToString metode overskrevet, for specifikt denne klasse.
